@@ -1,0 +1,17 @@
+{
+  "name": "karyarambha",
+  "version": "1.0.0",
+  "description": "Karyarambha Integrated CMS & Business Engine",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "test": "cd backend && npm test",
+    "install:all": "npm install --workspace=backend && npm install --workspace=frontend"
+  }
+}
